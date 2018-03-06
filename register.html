@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>登录</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="renderer" content="webkit">
+      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+      <meta content="yes" name="apple-mobile-web-app-capable">
+      <meta content="black" name="apple-mobile-web-app-status-bar-style">
+      <meta content="telephone=no" name="format-detection">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta content="email=no" name="format-detection" />
+      <meta name="keywords" content="多点留学" />
+      <meta name="description" content="多点留学咨询服务" />
+      <!-- 引入 Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/reset.css">
+      <link rel="stylesheet" type="text/css" href="css/result-bootstrap.css">
+</head>
+   <body>
+     <div class="center-box" id="center-box">
+          <div class="container">
+              <div class="row">
+                  <form action="" method="post">
+                      <div class="logo"><img src="images/logo.png"></div>
+                      <p class="logo-text">留学，就要问多点！</p>
+                      <p class="line"><span> </span><b>合作伙伴登录</b> <span></span></p>
+                      <!-- 登录 -->
+                      <div class="input-text input-text1">
+                          <p class="input"><input type="text" name="usename" placeholder="请输入您注册的手机号/邮箱"></p>
+                          <p class="input"><input type="password" name="password" placeholder="请输入您的密码"></p>
+                          <p class="right-forget"><a href="javascript:;">忘记密码？</a></p>
+                          <p class="btn"><button>登录</button></p>
+                          <p class="or">or</p>
+                          <div class="weixin">
+                              <p><i><img width="20px;" src="images/9.png"></i><b>微信登录</b></p>
+                          </div>
+                      </div>
+                      <!-- 忘记密码 -->
+                      <div class="input-text input-text2" style="display: none">
+                          <p class="input input-rela">
+                              <input type="text" name="usename" placeholder="请输入您注册的手机号"><button class="yzm input-abso">|&nbsp;获取验证码</button>
+                          </p>
+                          <p class="input"><input type="text" name="code" placeholder="请输入验证码"></p>
+                          <p class="input"><input type="password" name="newpassword" placeholder="请输入您的新密码"></p>
+                          <p class="btn"><button>确认重置密码</button></p>
+                          <p class="or">or</p>
+                          <div class="weixin">
+                              <p><i><img width="20px;" src="images/9.png"></i><b>微信登录</b></p>
+                          </div>
+                      </div>
+                  </form> 
+                  <p class="back"><a href="index.html">返回首页</a></p> 
+              </div>
+          </div>
+        </div>
+      <script src="js/jquery-1.12.2.min.js"></script>
+        <!-- 包括所有已编译的插件 -->
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        //获取屏幕高度
+          // $(document).ready(function(){
+          //     var h=$(window).height();
+          //     document.getElementById("center-box").style.height=h+"px";
+          // });
+        //忘记密码
+            $(".right-forget").click(function() {
+                $(".input-text1").hide();
+                $(".input-text2").show()
+            });
+       </script>
+  </body>
+</html>

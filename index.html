@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>首页</title>
+     
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="renderer" content="webkit">
+      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+      <meta content="yes" name="apple-mobile-web-app-capable">
+      <meta content="black" name="apple-mobile-web-app-status-bar-style">
+      <meta content="telephone=no" name="format-detection">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta content="email=no" name="format-detection" />
+      <meta name="keywords" content="多点留学" />
+      <meta name="description" content="多点留学咨询服务" />
+      <!-- 引入 Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/reset.css">
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" type="text/css" href="css/result-bootstrap.css">
+</head>
+
+   <body>
+       <nav class="navbar navbar-default navbar-static navbar-fixed-top">
+           <div class="container">
+               <div class="navbar-header top-left">
+                        <a  class="navbar-brand" href="#">
+                           <img src="images/ddstudy_logo.png">留学，就要问多点！
+                        </a>
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" 
+                             data-target=".bs-js-navbar-scrollspy">
+                             <span class="sr-only">切换导航</span>
+                             <span class="icon-bar"></span>
+                             <span class="icon-bar"></span>
+                             <span class="icon-bar"></span>
+                        </button>
+                </div>
+                <div class="collapse navbar-collapse bs-js-navbar-scrollspy collapse-bg">
+                    <ul class="nav navbar-nav  navbar-right" id="text">
+                        <li class="active"><a href="index.html">首页</a></li>
+                        <li><a href="sparents.html">我是学生&nbsp;·&nbsp;家长</a></li>
+                        <li><a href="hclassman.html">我是海外学长</a></li>
+                        <li><a href="daren.html">我是留学达人</a></li>
+                        <li><a href="zazhi.html">留学青年杂志</a></li>
+                        <li><a href="aboutus.html">关于我们</a></li>
+                    </ul>
+                </div>    
+           </div>
+        </nav>
+        <!-- 定位 -->
+        <div class="sideDot">
+            <ul>
+                <li><a data-target="#home" class="current">1<span>留学轻松</span></a></li>
+                <li><a data-target="#about">2<span>问多点</span></a></li>
+                <li><a data-target="#why">3<span>挑达人?</span></a></li>
+                <li><a data-target="#service">4<span>撩学长</span></a></li>
+                <li><a data-target="#case">5<span>听讲座</span></a></li>
+            </ul>
+        </div>
+        <header class="header" id="home">
+            <div id="banner" class="carousel slide shouye-banner" data-ride="carousel" data-interval="2500">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                 </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/ddstudy_02.jpg" alt="One  slide">
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+            <!--     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a> -->
+          </div>  
+          <!-- pc视频小图 -->
+          <div class="video_all container">
+              <div class="item">
+                    <img src="video/vedio_01.jpg" alt="Second  slide">
+                    <p class="on on1" name="1" onclick="fun(this,1)"></p>
+                </div>
+               <div class="item">
+                    <img src="video/vedio_02.jpg" alt=" third slide">
+                    <p class="on on2" name="2" onclick="fun(this,2)"></p>
+                </div>
+                <div class="item">
+                    <img src="video/vedio_03.jpg" alt="four  slide">
+                    <p class="on on3" name="3" onclick="fun(this,3)"></p>
+                </div>
+               <div class="item">
+                    <img src="video/vedio_04.jpg" alt="five  slide">
+                    <p class="on on4" name="4" onclick="fun(this,4)"></p>
+                </div>
+                <div class="item">
+                    <img src="video/vedio_05.jpg" alt="six  slide">
+                    <p class="on on5" name="5" onclick="fun(this,5)"></p>
+                </div> 
+          </div>
+          <!-- 移动视频 -->
+          <div class="video_smal container">
+              <div class="item smal1">
+                    <img src="video/vedio_03.jpg" alt="Second  slide">
+                    <p class="on on1" name="1" onclick="fun(this,1)"></p>
+                </div>
+                <div class="smal2">
+                   <div class="item">
+                        <img src="video/vedio_01.jpg" alt=" third slide">
+                        <p class="on on2" name="2" onclick="fun(this,2)"></p>
+                    </div>
+                    <div class="item">
+                        <img src="video/vedio_02.jpg" alt="four  slide">
+                        <p class="on on3" name="3" onclick="fun(this,3)"></p>
+                    </div>
+                </div>
+                <div class="smal2">
+                   <div class="item ">
+                        <img src="video/vedio_04.jpg" alt="five  slide">
+                        <p class="on on4" name="4" onclick="fun(this,4)"></p>
+                    </div>
+                    <div class="item">
+                        <img src="video/vedio_05.jpg" alt="six  slide">
+                        <p class="on on5" name="5" onclick="fun(this,5)"></p>
+                    </div> 
+                </div>
+          </div>
+        </header>
+        <!-- 内容 -->
+        <div class="row imgs">
+            <div class="col-md-12 col-sm-12 col-xs-12 img1" id="about">
+               <a href="javascript:;"><img src="images/ddstudy_03.jpg"></a>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 img1" id="why">
+               <a href="javascript:;"><img src="images/ddstudy_04.jpg"></a>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 img1" id="service">
+               <a href="javascript:;"><img src="images/ddstudy_05.jpg"></a>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 img1" id="case">
+               <a href="javascript:;"><img src="images/ddstudy_06.jpg"></a>
+            </div>    
+        </div>
+        <!-- 底部 -->
+        <footer class="footer btm btm-top">
+          <div class="container">
+           <div class="row">
+           <!-- 左边 -->
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="jz">
+                        <div class="col-2">
+                            <p class="p1"><a href="register.html"><i class="shape"></i>合作伙伴入口</a></p>
+                            <p class="p2"><a href="option.html"><i class="shape"></i>投诉&建议</a></p>
+                        </div> 
+                        <div class="left-btm">
+                            <p>广州多点信息科技有限公司</p>
+                            <p>粤ICP备16086721号</p>
+                        </div>
+                    </div>   
+                </div>
+            <!-- 右边 -->
+                <div class="col-md-6 col-sm-6 col-xs-12 top-col-12">
+                <!-- 右边1 -->
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="jzm">
+                            <p class="sys">微信公众号</p>
+                            <p class="bk margin" style="border: none"><img src="images/ewm.png"></p> 
+                        </div>   
+                    </div>
+                <!-- 右边2 -->
+                    <div class="col-md-6 col-sm-6 col-xs-6 col-width-app">
+                        <p>APP下载</p>
+                        <div class="downlend margin rol">
+                            <p class="bk"><img width="40px" src="images/iphone-_logo.png"></p>
+                            <p class="bk"><img width="40px" src="images/android_logo.png"></p>    
+                        </div>    
+                    </div>
+                </div>
+             </div> 
+          </div>   
+        </footer>
+        <div class="video_box" style="position: absolute;top:0;left: 0;">
+            <!-- 视频弹窗 -->
+            <div class="video video1" style="display:none">
+                <h3><p>家长篇</p><span><img src="video/del.png"></span></h3>
+                <video width="100%" src="video/sp1.mp4" height="inherit" controls id='bf1'>
+                您的浏览器不支持 video 标签。
+                </video>
+                <h6><img src=""></h6>
+            </div>
+            <div class="video video2" style="display:none">
+                <h3><p>学长篇</p><span><img src="video/del.png"></span></h3>
+                <video width="100%" src="video/sp2.mp4" height="inherit" controls id='bf2'>
+                您的浏览器不支持 video 标签。
+                </video>
+                <!-- <h6><img src="video/dd.jpg"></h6> -->
+            </div>
+            <div class="video video3" style="display:none">
+                <h3><p>顾问篇</p><span><img src="video/del.png"></span></h3>
+                <video width="100%" src="video/sp5.mp4" height="inherit" controls id='bf3'>
+                您的浏览器不支持 video 标签。
+                </video>
+                <!-- <h6><img src="video/dd.jpg"></h6> -->
+            </div>
+            <div class="video video4" style="display:none">
+                <h3><p>顾问篇</p><span><img src="video/del.png"></span></h3>
+                <video width="100%" src="video/sp3.mp4" height="inherit" controls id='bf4' >
+                您的浏览器不支持 video 标签。
+                </video>
+                <!-- <h6><img src="video/dd.jpg"></h6> -->
+            </div>
+            <div class="video video5" style="display:none">
+                <h3><p>问多点留学</p><span><img src="video/del.png"></span></h3>
+                <video width="100%" src="video/sp4.mp4" height="inherit" controls id='bf5' autoplay preload>
+                您的浏览器不支持 video 标签。
+                </video>
+                <!-- <h6><img src="video/dd.jpg"></h6> -->
+            </div>
+            <!-- 遮罩 -->
+            <div class="bg"></div>
+        </div>
+
+        
+        <script src="js/jquery-1.12.2.min.js"></script>
+        <!-- 包括所有已编译的插件 -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jgestures.js"></script>
+        <script>
+  if ("wView" in window) {
+    window.wView.allowsInlineMediaPlayback = "YES";
+    window.wView.mediaPlaybackRequiresUserAction = "NO";
+  }
+</script>
+        <script type="text/javascript">
+        //  $(document).ready(function(){
+        //     //手势右滑 回到上一个画面
+        //    ('#myCarousel').bind('swiperight swiperightup swiperightdown',function(){
+        //         $("#myCarousel").carousel('prev');
+        //     })
+        //     //手势左滑 进入下一个画面
+        //     $('#carousel-example-generic').bind('swipeleft swipeleftup swipeleftdown',function(){
+        //         $("#myCarousel").carousel('next');
+        //     });
+        // });
+         // 显示第几个视频
+        function fun(obj,id){
+            var num= $(obj).attr("name");
+              $(".video").hide();
+              showDiv($(".video"+num),".video h6 img");
+              $(".bg").show();
+              $(".video h3 span img").on("click",function(){
+                $(".video,.bg").hide();
+                var  video = $("#bf"+id);
+                 video[0].pause();
+             })
+            t= setTimeout("remainTime("+id+")",3000);  
+          }
+          function remainTime(id){
+             var video = $("#bf"+id);
+              $(".video"+id+" h6 img").hide();
+              video[0].play(); // play() 和 pause() 是HTML5中video自带的API函数，哈哈，方便吧？
+                  clearTimeout(t);
+           }
+
+          //后台
+           $(function(){
+             
+              //dot slide
+              $('.sideDot').find('a').click(function(){
+                var target = $(this).data('target');
+                var location = $(target).offset().top-50;
+                $('body,html').stop().animate({scrollTop:location});
+                $(this).addClass('current').parent('li').siblings().find('a').removeClass('current');
+                return false;
+              });
+              //scroll dot
+              $(document).scroll(function(){
+                var scrollPos = $(document).scrollTop();
+                $('.sideDot a').each(function () {
+                  var currLink = $(this);
+                  var refElement = $(currLink.data('target'));
+                  if (refElement.position().top - 100 <= scrollPos && refElement.position().top + refElement.outerHeight() - 100 > scrollPos) {
+                    $('.sideDot a').removeClass("current");
+                    currLink.addClass("current");
+                  }
+                  else{
+                    currLink.removeClass("current");
+                  }
+                });
+              }).scroll();
+            });
+
+
+showDiv();
+      function showDiv(obj){
+       $(obj).show();
+       center(obj);
+       $(window).scroll(function(){
+        center(obj);
+       });
+       $(window).resize(function(){
+        center(obj);
+       }); 
+      }
+
+
+function center(obj){
+  var windowWidth = document.documentElement.clientWidth;   
+  var windowHeight = document.documentElement.clientHeight;   
+  var popupHeight = $(obj).height();   
+  var popupWidth = $(obj).width();    
+  $(obj).css({   
+   "position": "absolute",   
+   "top": (windowHeight-popupHeight)/2+$(document).scrollTop(),   
+   "left": (windowWidth-popupWidth)/2   
+  });  
+}
+
+//滚动的时候自动居中
+$(window).scroll(function(){
+  showDiv();
+});
+
+//窗口变化自动居中
+$(window).resize(function(){
+  showDiv();
+});
+
+
+        </script>
+  </body>
+</html>
